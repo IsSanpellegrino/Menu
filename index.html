@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu del Bar</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: var(--primary-color); }
+        p.subtitle { font-style: italic; color: #666; }
+
+        .section-title {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 15px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .item-info { flex: 1; }
+        .item-name { font-weight: bold; font-size: 1.1em; }
+        .item-description { font-size: 0.9em; color: #777; display: block; }
+        .item-price { font-weight: bold; color: var(--accent-color); margin-left: 10px; }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Caffè Centrale</h1>
+        <p class="subtitle">Qualità e tradizione dal 1990</p>
+    </header>
+
+    <h2 class="section-title">Caffetteria</h2>
+    
+    <div class="menu-item">
+        <div class="item-info">
+            <span class="item-name">Espresso</span>
+            <span class="item-description">Miscela arabica 100%</span>
+        </div>
+        <span class="item-price">€ 1,20</span>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <span class="item-name">Cappuccino</span>
+            <span class="item-description">Latte fresco intero o soia</span>
+        </div>
+        <span class="item-price">€ 1,50</span>
+    </div>
+
+    <h2 class="section-title">Aperitivi</h2>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <span class="item-name">Spritz Aperol / Campari</span>
+            <span class="item-description">Accompagnato da stuzzichini misti</span>
+        </div>
+        <span class="item-price">€ 6,00</span>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-info">
+            <span class="item-name">Gin Tonic Premium</span>
+            <span class="item-description">Selezione di Gin e acque toniche</span>
+        </div>
+        <span class="item-price">€ 10,00</span>
+    </div>
+
+    <footer>
+        <p>In caso di allergie, contatta il nostro staff.</p>
+    </footer>
+
+</body>
+</html>
